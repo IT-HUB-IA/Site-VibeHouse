@@ -1,0 +1,93 @@
+/* Base: reset leve, tipografia, botões */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html, body { overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, p, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+
+:focus-visible { outline: 3px solid var(--azul-brilho); outline-offset: 3px; border-radius: 6px; }
+
+.pular {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--texto); color: #fff;
+  padding: 10px 16px; border-radius: var(--raio-sm); text-decoration: none;
+}
+.pular:focus { top: 16px; }
+
+.largura { max-width: calc(var(--largura) + 2 * var(--margem)); margin: 0 auto; padding: 0 var(--margem); }
+
+/* Títulos: Inter 600 bem fechado, como no app */
+.titulo {
+  font-size: clamp(2.2rem, 4.6vw, 4rem);
+  font-weight: var(--titulo-peso);
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+.fraco { color: #8E8E93; }
+.azul { color: var(--azul); }
+
+.sobre-titulo {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-bottom: 18px;
+  font-size: 14px; font-weight: 600; color: var(--azul);
+}
+.sobre-titulo::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+/* Cartão branco translúcido do app */
+.cartao {
+  background: var(--vidro);
+  border: 1px solid #fff;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-suave);
+  backdrop-filter: blur(20px) saturate(1.4);
+}
+
+/* Botões */
+.botao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 14px 24px;
+  background: var(--azul); color: #fff;
+  font-weight: 600; font-size: 16px; text-decoration: none; letter-spacing: -0.01em;
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset, 0 10px 24px -10px rgba(0, 100, 204, .7);
+  transition: transform var(--rapido) var(--curva), background-color var(--rapido), box-shadow var(--rapido);
+}
+.botao:hover { background: var(--azul-escuro); transform: translateY(-2px); box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset, 0 14px 28px -10px rgba(0, 100, 204, .75); }
+.botao:active { transform: translateY(0); }
+.botao .seta { transition: transform var(--rapido) var(--curva); }
+.botao:hover .seta { transform: translateX(4px); }
+
+.botao-pequeno { min-height: 40px; padding: 8px 16px; font-size: 14px; border-radius: 12px; }
+
+.botao-suave { background: var(--sup); color: var(--texto); box-shadow: var(--sombra-suave); border: 1px solid #fff; }
+.botao-suave:hover { background: var(--sup); color: var(--azul); box-shadow: var(--sombra); }
+
+.link-sub { text-decoration: none; font-weight: 500; color: var(--azul); }
+.link-sub:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Entrada ao rolar */
+.js .revela { opacity: 0; transform: translateY(18px); transition: opacity var(--medio) var(--curva), transform var(--medio) var(--curva); }
+.js .revela.visivel { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .revela { opacity: 1; transform: none; }
+}

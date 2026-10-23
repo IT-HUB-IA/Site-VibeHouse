@@ -1,0 +1,45 @@
+/* Tokens da marca Vibe House: os mesmos valores do app (127.0.0.1:4317) */
+:root {
+  /* Cores base do app */
+  --azul: #0064CC;
+  --azul-escuro: #0052A8;
+  --azul-claro: #E5F0FF;
+  --azul-brilho: #3D8EF0;
+  --fundo: #E8E9EC;
+  --sup: #FFFFFF;
+  --vidro: rgba(255, 255, 255, .78);
+  --texto: #1D1D1F;
+  --fraco: #636366;
+  --borda: #D2D2D7;
+  --linha: rgba(29, 29, 31, .08);
+
+  /* Cores das cinco pastas, iguais ao app */
+  --financas: #278366;  --financas-claro: #B9E6D6;
+  --planos:   #7250BC;  --planos-claro:   #D5C2FA;
+  --mercado:  #B68A16;  --mercado-claro:  #F4E5A9;
+  --rotina:   #757585;  --rotina-claro:   #DFDFEC;
+  --nos:      #C0782C;  --nos-claro:      #F9DDB5;
+
+  /* Tipografia: Inter, como no app */
+  --fonte: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --titulo-peso: 600;
+  --titulo-espaco: -0.03em;
+
+  /* Cantos e sombras do app */
+  --raio-sm: 10px;
+  --raio: 18px;
+  --raio-lg: 28px;
+  --sombra: 0 1px 2px rgb(0 0 0 / .06), 0 8px 24px -12px rgb(0 0 0 / .18);
+  --sombra-suave: 0 4px 10px rgba(19, 40, 68, .04);
+  --sombra-alta: 0 2px 4px rgb(0 0 0 / .04), 0 24px 48px -20px rgba(19, 40, 68, .28);
+
+  /* Grade */
+  --largura: 1180px;
+  --margem: clamp(16px, 4vw, 48px);
+  --bloco: clamp(80px, 11vw, 150px);
+
+  /* Movimento do app */
+  --curva: cubic-bezier(0.32, 0.72, 0, 1);
+  --rapido: 200ms;
+  --medio: 600ms;
+}

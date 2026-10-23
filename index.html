@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibe House · a casa é de todos</title>
+  <meta name="description" content="Contas, agenda, mercado e decisões da casa num só lugar, à vista de quem mora junto. Grátis.">
+  <link rel="icon" href="assets/simbolo.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/secoes.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo" data-topo>
+    <div class="topo-barra">
+      <a class="marca" href="#inicio" aria-label="Vibe House, início">
+        <img class="marca-logo" src="assets/logo-3d.webp" alt="" width="40" height="40">
+        <span class="marca-nome"><b>V</b>ibe <b>H</b>ouse</span>
+      </a>
+      <nav class="topo-nav" aria-label="Seções da página">
+        <a href="#pastas">Como funciona</a>
+        <a href="#dia">Um dia</a>
+        <a href="#combinar">Decidir junto</a>
+        <a href="#perguntas">Perguntas</a>
+      </nav>
+      <div class="topo-acoes">
+        <a class="link-entrar" href="http://127.0.0.1:4317/" data-app>Entrar</a>
+        <a class="botao botao-pequeno" href="http://127.0.0.1:4317/" data-app>Criar conta<span class="so-largo"> grátis</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- CAPA -->
+    <section class="capa" id="inicio" aria-labelledby="t-capa">
+      <div class="capa-texto">
+        <p class="selo"><span class="ponto" aria-hidden="true"></span>Grátis para qualquer casa</p>
+        <h1 class="capa-titulo" id="t-capa">
+          <span class="linha">A casa é de todos.</span>
+          <span class="linha destaque">A memória dela também.</span>
+        </h1>
+        <p class="capa-apoio">Contas, agenda, mercado e decisões num só lugar, à vista de quem mora junto. Ninguém precisa ser o lembrete da casa.</p>
+        <div class="acoes">
+          <a class="botao" href="http://127.0.0.1:4317/" data-app>Criar conta grátis <span class="seta" aria-hidden="true">→</span></a>
+          <a class="botao botao-suave" href="#pastas">Ver como funciona</a>
+        </div>
+        <p class="capa-nota">Para casais, famílias e quem divide apartamento.</p>
+      </div>
+
+      <div class="capa-cena" role="img" aria-label="O logo do Vibe House cercado por avisos do app: conta de luz na sexta, jantar na agenda e uma escolha de apartamento para combinar.">
+        <div class="capa-halo" aria-hidden="true"></div>
+        <img class="capa-logo" src="assets/logo-3d.webp" alt="" width="520" height="520" data-flutua="-0.06">
+
+        <div class="aviso aviso-verde" data-flutua="0.05">
+          <span class="aviso-icone pasta-mini" style="--c:#278366;--l:#B9E6D6"></span>
+          <span class="aviso-rotulo">Dinheiro · próximos 7 dias</span>
+          <strong>Conta de luz vence sexta</strong>
+          <small>Ana paga · R$ 187,40</small>
+        </div>
+
+        <div class="aviso aviso-cinza" data-flutua="0.09">
+          <span class="aviso-icone pasta-mini" style="--c:#757585;--l:#DFDFEC"></span>
+          <span class="aviso-rotulo">Na agenda</span>
+          <strong>Jantar na casa da mãe</strong>
+          <small>Sexta · 19:30 · todos</small>
+        </div>
+
+        <div class="aviso aviso-amarelo" data-flutua="-0.03">
+          <span class="aviso-icone pasta-mini" style="--c:#B68A16;--l:#F4E5A9"></span>
+          <span class="aviso-rotulo">Para combinar</span>
+          <strong>Apartamento perto do trabalho</strong>
+          <small>2 de 2 opinaram</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE NINGUÉM VÊ -->
+    <section class="bloco invisivel" id="invisivel" aria-labelledby="t-invisivel">
+      <div class="largura">
+        <p class="sobre-titulo revela">O que ninguém vê</p>
+        <h2 class="titulo revela" id="t-invisivel">Alguém sempre lembra.<br><span class="fraco">Quase sempre é a mesma pessoa.</span></h2>
+      </div>
+      <div class="faixa" aria-label="Exemplos de coisas que alguém precisa lembrar">
+        <ul class="faixa-trilho" data-faixa></ul>
+      </div>
+      <div class="largura invisivel-fim">
+        <p class="revela">Uma casa tem dezenas de pequenos prazos. Quando eles moram na cabeça de uma pessoa só, o cansaço mora junto.</p>
+        <p class="invisivel-virada revela">O Vibe House tira essa lista da cabeça de um e coloca <span class="azul">na frente de todos.</span></p>
+      </div>
+    </section>
+
+    <!-- CINCO PASTAS -->
+    <section class="bloco" id="pastas" aria-labelledby="t-pastas">
+      <div class="largura">
+        <div class="cabeca">
+          <div>
+            <p class="sobre-titulo revela">Como funciona</p>
+            <h2 class="titulo revela" id="t-pastas">Cinco pastas.<br><span class="fraco">Uma casa inteira.</span></h2>
+          </div>
+          <p class="cabeca-apoio revela">Cada assunto da casa tem a sua pasta. Toque em uma para ver o que tem dentro.</p>
+        </div>
+
+        <div class="estante" role="tablist" aria-label="Pastas do Vibe House" data-abas></div>
+        <div class="painel" role="tabpanel" tabindex="0" data-painel></div>
+      </div>
+    </section>
+
+    <!-- UM DIA COMUM -->
+    <section class="bloco" id="dia" aria-labelledby="t-dia">
+      <div class="largura dia">
+        <div class="dia-lado">
+          <p class="sobre-titulo revela">Um dia comum</p>
+          <h2 class="titulo revela" id="t-dia">Sem ninguém<br><span class="fraco">cobrando ninguém.</span></h2>
+          <p class="dia-apoio revela">Cada aviso chega para quem mora junto. Cada tarefa já tem dono.</p>
+        </div>
+        <ol class="linha-tempo cartao" data-dia></ol>
+      </div>
+    </section>
+
+    <!-- PARA COMBINAR -->
+    <section class="bloco combinar-bloco" id="combinar" aria-labelledby="t-combinar">
+      <div class="largura combinar">
+        <div class="combinar-texto">
+          <p class="sobre-titulo revela">Para combinar</p>
+          <h2 class="titulo revela" id="t-combinar">Decisão grande não se resolve com <span class="azul">“tanto faz”.</span></h2>
+          <p class="revela">Mudança, reforma, viagem. Coloquem as opções lado a lado, comparem o que importa para vocês e vejam a opinião de cada um, no seu tempo.</p>
+          <a class="botao" href="http://127.0.0.1:4317/" data-app>Começar uma decisão <span class="seta" aria-hidden="true">→</span></a>
+        </div>
+        <div class="quadro cartao">
+          <div class="quadro-cabeca">
+            <div>
+              <h3>Nossa mudança</h3>
+              <p>3 opções · falta a sua opinião</p>
+            </div>
+            <span class="etiqueta-pasta" style="--c:#7250BC">Planos</span>
+          </div>
+          <div data-escolhas></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERGUNTAS -->
+    <section class="bloco" id="perguntas" aria-labelledby="t-perguntas">
+      <div class="largura perguntas">
+        <div class="perguntas-lado">
+          <p class="sobre-titulo revela">Antes de começar</p>
+          <h2 class="titulo revela" id="t-perguntas">O que é da casa, todos veem.<br><span class="fraco">O que é seu, fica seu.</span></h2>
+          <div class="visoes cartao">
+            <div class="alternador" role="group" aria-label="Trocar de visão">
+              <button type="button" aria-pressed="true" data-visao="casa">Casa</button>
+              <button type="button" aria-pressed="false" data-visao="minha">Minha visão</button>
+            </div>
+            <ul class="visoes-lista" data-visoes-lista aria-live="polite"></ul>
+          </div>
+        </div>
+        <div class="faq cartao" data-faq></div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="bloco final" id="comecar" aria-labelledby="t-final">
+      <div class="largura">
+        <div class="final-cartao">
+          <img class="final-logo" src="assets/logo-3d.webp" alt="" width="260" height="260">
+          <div class="final-texto">
+            <h2 class="titulo revela" id="t-final">Abra a pasta da sua casa.</h2>
+            <p class="revela">Comece sozinho hoje e chame quem mora com você quando quiser.</p>
+            <div class="acoes">
+              <a class="botao" href="http://127.0.0.1:4317/" data-app>Criar conta grátis <span class="seta" aria-hidden="true">→</span></a>
+            </div>
+            <p class="capa-nota">Grátis para qualquer casa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="largura rodape-dentro">
+      <a class="marca" href="#inicio" aria-label="Vibe House, voltar ao início">
+        <img class="marca-logo" src="assets/logo-3d.webp" alt="" width="32" height="32">
+        <span class="marca-nome"><b>V</b>ibe <b>H</b>ouse</span>
+      </a>
+      <p>Feito para quem mora junto.</p>
+      <a class="link-sub" href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts/dados.js"></script>
+  <script src="scripts/pagina.js"></script>
+</body>
+</html>
