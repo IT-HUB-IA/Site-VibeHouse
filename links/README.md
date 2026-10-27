@@ -2,9 +2,30 @@
 
 Página independente da Vibe House, destinada ao perfil `@vibe.house.it`.
 
-Endereço previsto no mesmo domínio: `https://vibehouse.it-ia.tec.br/links/`.
-A disponibilidade desse endereço depende da publicação deste commit pelo provedor
-que já hospeda o site. A existência dos arquivos no GitHub não comprova um deploy.
+Endereço publicado: `https://vibehouse.it-ia.tec.br/links/`.
+Publicação e verificação realizadas em 27/10/2026.
+
+## Hospedagem independente
+
+A página está no projeto Vercel **vibe-house-links**, da equipe
+**you-contabilidade**, com origem pública `https://vibe-house-links.vercel.app/`.
+No projeto principal **vibe-house**, duas regras de roteamento publicadas atendem
+exclusivamente estes caminhos:
+
+- `^/links$`: redireciona para `/links/` com status 308.
+- `^/links/(.*)$`: encaminha para `https://vibe-house-links.vercel.app/$1`.
+
+As demais páginas continuam no deployment anterior do projeto principal.
+O site em produção contém arquivos do aplicativo que não fazem parte deste
+repositório. **Não substituir o deployment principal pelo conteúdo deste
+repositório**, pois isso removeria arquivos do aplicativo publicado.
+
+A primeira publicação de links foi feita por upload dos arquivos desta pasta.
+A integração GitHub da conta Vercel ainda não tem acesso administrativo ou de
+escrita a `IT-HUB-IA/Site-VibeHouse` para conectar o repositório. Assim, um push
+isolado no GitHub não atualiza automaticamente o projeto de links. Quando o acesso
+for concedido, vincular o projeto **vibe-house-links** e usar `links` como sua
+Root Directory. Preservar o projeto principal **vibe-house** e seus arquivos.
 
 ## Estrutura
 
