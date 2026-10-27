@@ -31,6 +31,9 @@ Root Directory. Preservar o projeto principal **vibe-house** e seus arquivos.
 
 - `index.html`: conteúdo, contatos e destinos dos botões.
 - `style.css`: identidade visual e interações dos ícones.
+- `mobile-fit.css`: composição adaptada à altura visível, com versão em duas
+  colunas para aparelhos na horizontal. Todos os acessos e canais permanecem
+  visíveis; textos editoriais repetidos são recolhidos em telas baixas.
 - `assets/`: logos, fonte Inter com licença e imagem de compartilhamento.
 
 HTML e CSS estáticos. Sem dependências, instalação, build, acesso ao banco,
